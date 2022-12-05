@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Winchild | Pre School & Day Care</title>
+	<link rel = "icon" href ="Images/logo.png" type = "image/x-icon">
+	<link href="CSS/style.css" type="text/css" rel="stylesheet">
+	<link href="CSS/footerStyle.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<style>
+		@font-face{
+			font-family: winchildFont;
+			src: url("CSS/winchildFont.ttf");
+		}
+
+		nav label a.font{
+			font-family: winchildFont;
+		}
+		
+		.imagefit{
+			background: url("Images/background1.jpg") no-repeat center fixed;
+			background-position: center;
+			background-size: cover;
+			display: block;
+			position: absolute;
+			width: 100%;
+		}
+		
+		.form1{
+			position: absolute;
+			left: 10%;
+		}
+		
+		.form1 h2{
+			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+		}
+		
+		.form1 p{
+			font-size: 20px;
+		}
+		
+		.form1 input{
+			align-content: right;
+			width: 450px;
+			height: 450px;
+			border-radius: 50%;
+			border: dashed;
+			border-color: #E66D0C;
+			padding: 5px;
+			border-width: 7px;
+			display: inline-block;
+		}
+		
+		.tbl1{
+			background-color: #ffffff;
+			tab-size: 100%;
+			width: 1300px;
+			align-content: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.tbl2{
+			tab-size: 100%;
+			width: 1300px;
+			text-align: left;
+			background: transparent;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.form2{
+			position: absolute;
+			top: 190%;
+			width: 100%;
+		}
+		
+		.form2 img{
+			width: 100px;
+			height: 100px;
+		}
+		
+		.form2 h2{
+			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+		}
+		
+		.form2 h3{
+			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+		}
+		
+		.topic{
+			text-align: center;
+		}
+		
+		.form3{
+			position: absolute;
+			width: 100%;
+			top: 270%;
+		}
+	</style>
+</head>
+
+<body onLoad="showSlides()">
+	<header>
+		<div>
+			<nav class="location">
+				<a href="https://www.facebook.com/profile.php?id=100064209064843"><img class="img" src="Images/facebook.png" alt="" height="44px"></a>
+				<label class="navContact"><img src="Images/male_user_50px.png" alt="" height="26px"/><a class="login" href="adminAccount.php"> My Account</a></label>
+				<label class="navContact"><img src="Images/telephone.png" alt="" height="26px"/>+94714512189</label>
+				<label class="navContact"><img src="Images/222-2226601_email-icon-e-mail-white-icon-png.png" alt="" height="18px"/> winchild@gmail.com</label>
+				<label class="navContact"><img src="Images/Maps_icon.png" alt="" height="23px"/> Piliyandala</label>
+			</nav>
+			<nav class="navigation">
+				<label class="logo"><img src="Images/logo.png" alt="" height="73px"/><a class="font" href="home.html" style="color: #C40C64"> Winchild</a></label> 
+				<ul>
+					<li><a class="active"  href="#">Home</a></li>
+					<li><a class="hover" href="aboutUs.html">About Us</a></li>
+					<li><a class="hover" href="programs.html">Programs</a></li>
+					<li><a class="hover" href="upcomingEvents.php">Upcoming Events</a></li>
+					<li><a class="hover" href="Gallery.php">Gallery</a></li>
+					<li><a class="hover" href="contactUs.php">Contact Us</a></li>
+					<li><a class="hover" href="applyNow.php">Apply Now</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<script>
+		let slideIndex = 0;
+		showSlides();
+		function showSlides() {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}
+			slides[slideIndex-1].style.display = "block";
+			setTimeout(showSlides, 9000); // Change image every 6 seconds
+		}
+	</script>
+	<div class ="slideshow-container">
+		<div class="mySlides fade"><br><br><br><br>
+			<img src="Images/img3.png" width="100%" alt="">
+			<div class="text">
+				<p style="font-size: 50px"><br>Play. Learn. Grow.</p>
+			</div>
+		</div>
+		<div class="mySlides fade"><br><br><br><br>
+			<img src="Images/img1.png" width="100%" alt="">
+			<div class="text">
+				<p style="font-size: 40px"><br>Welcome to</p><br><h1 style="font-size: 50px; font-family: winchildFont;">Winchild</h1><p style="font-size: 30px">The premier Pre-School, Day care and After School<br>Service provider in Sri Lanka..</p><br>
+				<a href="aboutUs.html"><button type="button" id="btnRead" value="Read More" style="font-size: 18px">Read More</button></a>
+			</div>
+		</div>
+		<div class="mySlides fade"><br><br><br><br>
+			<img src="Images/img2.png" width="100%" alt="">
+			<div class="text">
+				<p style="font-size: 50px"><br>Foundation for Practical Life..</p>
+			</div>
+		</div>
+    </div>
+	<br><br><br><br><br>
+	<form class="form1" id="form1" name="form1" method="post">
+		<table class="tbl1">
+			<tr>
+			 <td><h2 style="font-size: 40px; color: #3F51AC;">Our Approach</h2><br>
+			  <p>Our Child Care and Pre School Centre provide an informal<br>
+				atmosphere and a child-oriented, developmentally<br>
+				appropriate curriculum where children learn through play<br>
+				and the exploration of their environment. We believe in<br>
+				giving children opportunities to become independent and<br>
+				successful in his/her environment. This will enable them to<br>
+				successfully solve problem and to learn expressing their<br>
+				ideas and feelings.</p>
+			 </td>
+		  	 <td><input type="image" name="img1" id="img1" src="Gallery/14.jpg"></td>
+	  		</tr>
+		</table>
+	</form>
+	<form class="form2" id="form2" name="form2" method="post"><br>
+		<div class="imagefit">
+			<table class="tbl2">
+				<tr>
+					<td class="topic" colspan="6"><br><br><br><br><h2 style="font-size: 40px; color: #3F51AC;">Winchild at a Glance</h2><br><br></td>
+				</tr>
+				<tr>
+					<td><img src="Images/yin-yang-xxl.png"></td>
+					<td><h3 style="font-size: 25px; color: #3F51AC;">Curriculum</h3><br><p>A play based curriculum<br>focusing on learning<br>through play.</p></td>
+					<td><img src="Images/975940.png"></td>
+					<td><h3 style="font-size: 25px; color: #3F51AC;">Day Care</h3><br><p>Long hours day care<br>which runs operations<br>from 6.30 am to 6.00 pm</p></td>
+					<td><img src="Images/culture@2x.png"></td>
+					<td><h3 style="font-size: 25px; color: #3F51AC;">Qualified Teachers</h3><br><p>Qualified teachers providing<br>both education and care.<br>No maids handling children.</p></td>
+				</tr>
+			</table>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+	</form>
+	
+<!--	footer-->
+	<form class="form3">
+		<div class="footer">
+		<div class="footer-content">
+			<div class="footer-section about">
+				<label><a href="home.html"><h1 style="font-family: winchildFont; font-weight: bold;"><img src="Images/logo.png" alt="" height="73px"> Winchild</h1></a></label><br><br>
+				<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;301/D, Thumbowila, Piliyandala</div><br>
+        		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-envelope"></i>&nbsp;&nbsp;winchild@gmail.com</div><br>
+        		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-phone"></i>&nbsp;&nbsp;+94714512189</div><br>
+        		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-clock"></i>&nbsp;&nbsp;Mon - Fri 6:30 AM to 6:00 PM</div>
+			</div>
+			<div class="footer-section programs">
+				<br><br><br><a href="programs.html"><h2 style="font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Programs</h2></a><br>
+				<ul>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Play Group</li><br>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lower Nursery</li><br>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upper Nursery</li><br>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After School Care</li>
+				</ul>
+			</div>
+			<div class="footer-section-links">
+				<br><br><br><h2 style="font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';">Links</h2><br>
+				<ul class="links">
+					<li>&nbsp;&nbsp;<a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="contactUs.php">Contact US</a></li><br>
+					<li>&nbsp;&nbsp;<a href="aboutUs.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="applyNow.php">Apply Now</a></li><br>
+					<li>&nbsp;&nbsp;<a href="programs.html">Programs</a></li><br>
+					<li>&nbsp;&nbsp;<a href="upcomingEvents.php">Upcoming Events</a></li><br>
+					<li>&nbsp;&nbsp;<a href="Gallery.php">Gallery</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			&copy; Winchild Pvt Ltd. | Designed by Sachin Akash - IT21351372 | SLIITA PROJECT
+		</div>
+	</div>
+	</form>
+	
+	<script>
+		const body = document.body;
+		let lastScroll = 0;
+
+		window.addEventListener('scroll', () => {
+			const currentScroll = window.pageYOffset
+
+			if (currentScroll <= 0){
+				body.classList.remove("scroll-up")
+			}
+			
+			if (currentScroll > lastScroll && !body.classList.contains("scroll-down") && lastScroll > 130){
+				body.classList.remove("scroll-up")
+				body.classList.add("scroll-down")
+			}
+			
+			if (currentScroll < lastScroll && body.classList.contains("scroll-down")){
+				body.classList.remove("scroll-down")
+				body.classList.add("scroll-up")
+			}
+
+			lastScroll = currentScroll;
+		})
+	</script>
+</body>
+</html>

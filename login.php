@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Winchild - Login</title>
+	<link rel = "icon" href ="Images/logo.png" type = "image/x-icon">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body{
+			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+			color: #FFFFFF;
+		}
+		
+		section{
+			position: relative;
+			height: 100vh;
+			width: 100%;
+			background: url("Images/login.jpg");
+			background-size: cover;
+			background-position: center center;
+		}
+		
+		.form-container{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+			width: 380px;
+			padding: 50px 30px;
+			border-radius: 10px;
+			box-shadow: 7px 7px 60px #000;
+		}
+		
+		h1{
+			text-transform: uppercase;
+			font-size: 2em;
+			text-align: center;
+			margin-bottom: 2em;
+		}
+		
+		.control input{
+			width: 100%;
+			display: block;
+			padding: 10px;
+			color: #222;
+			border: none;
+			outline: none;
+			margin: 1em 0;
+		}
+		
+		button{
+			background-color: #C40C64;
+			display: block;
+			margin: 0px 0px 0px 10px;
+			text-align: center;
+			border-radius: 12px;
+			border: thin;
+			padding: 10px 40px;
+			outline: none;
+			color: white;
+			cursor: pointer;
+			transition: .5s;
+			text-transform: uppercase;
+		}
+
+		button:hover{
+			background-color: white;
+			color: #C40C64;
+			font-weight: bold;
+			text-align: center;
+			transition: .5s;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+		}
+		
+		.link{
+			text-align: center;
+		}
+		
+		.link a{
+			text-decoration: none;
+			color: #fff;
+			opacity: .6;
+			transition: opacity .3s ease;
+		}
+		
+		.link a:hover{
+			opacity: 1;
+		}
+		
+		input{
+			border-radius: 8px;
+		}
+		
+		input:focus{
+			background-color: #d2d9dd;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<div class="form-container">
+			<h1>Sign In</h1>
+			<form action="loginHandler.php" method="post">
+				<div class="control">
+					<label style="font-size: 18px" for="txtEmail">Email</label>
+					<input type="text" name="txtEmail" id="txtEmail" placeholder="Eg: john@gmail.com">
+				</div>
+				<div class="control">
+					<label style="font-size: 18px" for="txtpwd">Password</label>
+					<input type="password" name="txtpwd" id="txtpwd" placeholder="**************">
+				</div>
+				<span><input type="checkbox">Remember me.</span>
+				<div class="control"><br>
+					<p align="center"><button type="submit" name="btnlogin" value="Login" id="btnlogin">Login</button></p>
+				</div>
+			</form>
+			<br>
+			<div class="link">
+				<a href="home.html">Winchild Home</a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
