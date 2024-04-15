@@ -210,7 +210,7 @@ if (!isset($_SESSION["username"]))
 			<li><a class="hover" href="aboutUs.html">About Us</a></li>
 			<li><a class="hover" href="programs.html">Programs</a></li>
 			<li><a class="hover" href="upcomingEvents.php">Upcoming Events</a></li>
-			<li><a class="hover" href="Gallery.php">Gallery</a></li>
+			<li><a class="hover" href="Gallery.html">Gallery</a></li>
 			<li><a class="hover" href="contactUs.php">Contact Us</a></li>
 			<li><a class="hover" href="applyNow.php">Apply Now</a></li>
 		</ul>
