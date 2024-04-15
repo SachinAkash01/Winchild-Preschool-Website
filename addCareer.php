@@ -195,7 +195,7 @@ if (!isset($_SESSION["username"]))
 			<li><a class="hover" href="aboutUs.html">About Us</a></li>
 			<li><a class="hover" href="programs.html">Programs</a></li>
 			<li><a class="hover" href="upcomingEvents.php">Upcoming Events</a></li>
-			<li><a class="hover" href="Gallery.php">Gallery</a></li>
+			<li><a class="hover" href="Gallery.html">Gallery</a></li>
 			<li><a class="hover" href="contactUs.php">Contact Us</a></li>
 			<li><a class="hover" href="applyNow.php">Apply Now</a></li>
 		</ul>
@@ -274,7 +274,7 @@ if (!isset($_SESSION["username"]))
 					<li>&nbsp;&nbsp;<a href="aboutUs.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="applyNow.php">Apply Now</a></li><br>
 					<li>&nbsp;&nbsp;<a href="programs.html">Programs</a></li><br>
 					<li>&nbsp;&nbsp;<a href="upcomingEvents.php">Upcoming Events</a></li><br>
-					<li>&nbsp;&nbsp;<a href="Gallery.php">Gallery</a></li>
+					<li>&nbsp;&nbsp;<a href="Gallery.html">Gallery</a></li>
 				</ul>
 			</div>
 		</div>
